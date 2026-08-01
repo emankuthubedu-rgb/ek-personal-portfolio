@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EMAN KUTHUB — Front-End Developer &amp; UI/UX Designer</title>
+<meta name="description" content="EMAN KUTHUB — BCA Student, Front-End Developer, UI/UX Designer and Aspiring Cybersecurity Professional based in Chennai, India.">
+<meta name="keywords" content="EMAN KUTHUB, Front-End Developer, UI/UX Designer, Portfolio, Chennai, BCA Student">
+<meta name="author" content="EMAN KUTHUB">
+<meta property="og:title" content="EMAN KUTHUB — Front-End Developer & UI/UX Designer">
+<meta property="og:description" content="BCA Student | Front-End Developer | UI/UX Designer | Aspiring Cybersecurity Professional">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#F8FAFC">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ LOADING SCREEN ============ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <div class="loader-ring"></div>
+    <span class="loader-mark">EK</span>
+    <p class="loader-text">Loading portfolio<span class="dots">...</span></p>
+  </div>
+</div>
+
+<!-- ============ SKIP LINK (accessibility) ============ -->
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo" aria-label="EMAN KUTHUB Home">
+      <span class="logo-mark">EK</span>
+      <span class="logo-text">EMAN<span>KUTHUB</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="#home" class="nav-link active" data-section="home">Home</a>
+      <a href="#about" class="nav-link" data-section="about">About</a>
+      <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+      <a href="#education" class="nav-link" data-section="education">Education</a>
+      <a href="#services" class="nav-link" data-section="services">Services</a>
+      <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+      <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-nav">Let's Connect</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main-content">
+
+<!-- ============ HERO SECTION ============ -->
+<section class="hero" id="home">
+  <div class="hero-bg" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <canvas id="nodeCanvas"></canvas>
+  </div>
+
+  <div class="hero-container">
+    <div class="hero-text">
+      <p class="hero-eyebrow" data-reveal><i class="fa-solid fa-hand-sparkles"></i> Welcome to my portfolio</p>
+
+      <h1 class="hero-heading" data-reveal>
+        Hi, I'm <span class="text-gradient">EMAN KUTHUB</span>
+      </h1>
+
+      <div class="hero-role" data-reveal>
+        <span class="typing-text" id="typingText"></span><span class="typing-cursor">|</span>
+      </div>
+
+      <p class="hero-tagline" data-reveal>
+        I design clean interfaces and build responsive websites — while growing my skills
+        in cybersecurity, one project at a time. Based in Chennai, Tamil Nadu.
+      </p>
+
+      <div class="hero-cta" data-reveal>
+        <a href="assets/EMAN_Kuthub_Resume.pdf" class="btn btn-primary" download>
+          <i class="fa-solid fa-download"></i><span>Download Resume</span>
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <span>Contact Me</span><i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="hero-meta" data-reveal>
+        <span><i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu, India</span>
+        <span><i class="fa-solid fa-graduation-cap"></i> BCA Student</span>
+      </div>
+    </div>
+
+    <div class="hero-visual" data-reveal>
+      <div class="avatar-glass">
+        <div class="avatar-placeholder">
+          <img src="em" alt="">
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </div>
+      <span class="float-chip chip-1"><i class="fa-brands fa-html5"></i> HTML5</span>
+      <span class="float-chip chip-2"><i class="fa-brands fa-figma"></i> Figma</span>
+      <span class="float-chip chip-3"><i class="fa-solid fa-shield-halved"></i> Security</span>
+      <span class="float-chip chip-4"><i class="fa-brands fa-js"></i> JavaScript</span>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+    <span></span>
+  </a>
+</section>
+
+<!-- ============ ABOUT SECTION ============ -->
+<section class="section" id="about">
+  <div class="section-container about-grid">
+    <div class="about-visual" data-reveal>
+      <div class="about-card-glass">
+        <span class="blob blob-small" aria-hidden="true"></span>
+        <div class="about-photo-placeholder">
+          <i class="fa-solid fa-user-astronaut"></i>
+        </div>
+      </div>
+      <div class="about-float-stat">
+        <span class="num" data-count="7">0</span>
+        <span class="label">Personal projects<br>built &amp; refined</span>
+      </div>
+    </div>
+
+    <div class="about-content">
+      <p class="section-eyebrow" data-reveal>About Me</p>
+      <h2 class="section-title" data-reveal>Curious builder at the intersection of <span class="text-gradient">design &amp; security</span></h2>
+      <p class="about-text" data-reveal>
+        I'm EMAN KUTHUB, a passionate BCA student with a strong interest in Front-End Development,
+        UI/UX Design, and Cybersecurity. I enjoy turning ideas into clean, user-friendly digital
+        experiences, and I'm equally drawn to understanding how systems work — and how to keep
+        them secure.
+      </p>
+      <p class="about-text" data-reveal>
+        I'm always learning: exploring new tools, practicing through hands-on projects, and
+        refining my technical skills one step at a time. Whether it's designing a wireframe,
+        writing responsive code, or studying networking fundamentals, I bring the same curiosity
+        and attention to detail to everything I build.
+      </p>
+
+      <div class="about-highlights" data-reveal>
+        <div class="highlight-pill"><i class="fa-solid fa-code"></i> Front-End Development</div>
+        <div class="highlight-pill"><i class="fa-solid fa-pen-ruler"></i> UI/UX Design</div>
+        <div class="highlight-pill"><i class="fa-solid fa-shield-halved"></i> Cybersecurity</div>
+      </div>
+
+      <a href="#contact" class="btn btn-primary" data-reveal>
+        <span>Get In Touch</span><i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS SECTION ============ -->
+<section class="section section-alt" id="skills">
+  <div class="section-container">
+    <p class="section-eyebrow center" data-reveal>What I Work With</p>
+    <h2 class="section-title center" data-reveal>My <span class="text-gradient">Skills</span></h2>
+    <p class="section-sub center" data-reveal>A growing toolkit spanning design, development and security fundamentals.</p>
+
+    <div class="skills-grid">
+
+      <div class="skill-card" data-reveal>
+        <div class="skill-icon-wrap"><i class="fa-solid fa-code"></i></div>
+        <h3>Frontend</h3>
+        <div class="skill-bar-item"><div class="skill-bar-top"><span>HTML5</span><span>95%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div></div>
+        <div class="skill-bar-item"><div class="skill-bar-top"><span>CSS3</span><span>92%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="92"></div></div></div>
+        <div class="skill-bar-item"><div class="skill-bar-top"><span>JavaScript</span><span>85%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div></div>
+        <div class="skill-bar-item"><div class="skill-bar-top"><span>Responsive Design</span><span>90%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div></div>
+      </div>
+
+      <div class="skill-card" data-reveal>
+        <div class="skill-icon-wrap"><i class="fa-solid fa-pen-ruler"></i></div>
+        <h3>UI/UX</h3>
+        <div class="skill-bar-item"><div class="skill-bar-top"><span>Figma</span><span>88%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div></div>
+        <div class="skill-bar-item"><div class="skill-bar-top"><span>Wireframing</span><span>85%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div></div>
+        <div class="skill-bar-item"><div class="skill-bar-top"><span>Prototyping</span><span>82%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="82"></div></div></div>
+      </div>
+
+      <div class="skill-card" data-reveal>
+        <div class="skill-icon-wrap"><i class="fa-solid fa-laptop-code"></i></div>
+        <h3>Programming</h3>
+        <div class="skill-bar-item"><div class="skill-bar-top"><span>Python</span><span>80%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div></div>
+        <div class="skill-bar-item"><div class="skill-bar-top"><span>C++</span><span>75%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div></div>
+        <div class="skill-bar-item"><div class="skill-bar-top"><span>Basic Java</span><span>65%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="65"></div></div></div>
+      </div>
+
+      <div class="skill-card" data-reveal>
+        <div class="skill-icon-wrap"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3>Cybersecurity</h3>
+        <div class="skill-bar-item"><div class="skill-bar-top"><span>Linux Basics</span><span>78%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="78"></div></div></div>
+        <div class="skill-bar-item"><div class="skill-bar-top"><span>Networking Fundamentals</span><span>75%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div></div>
+        <div class="skill-bar-item"><div class="skill-bar-top"><span>Ethical Hacking Basics</span><span>65%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="65"></div></div></div>
+        <div class="skill-bar-item"><div class="skill-bar-top"><span>Nmap</span><span>70%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div></div>
+        <div class="skill-bar-item"><div class="skill-bar-top"><span>Wireshark</span><span>68%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="68"></div></div></div>
+      </div>
+
+      <div class="skill-card" data-reveal>
+        <div class="skill-icon-wrap"><i class="fa-solid fa-toolbox"></i></div>
+        <h3>Tools</h3>
+        <div class="skill-bar-item"><div class="skill-bar-top"><span>Git</span><span>85%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div></div>
+        <div class="skill-bar-item"><div class="skill-bar-top"><span>GitHub</span><span>85%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div></div>
+        <div class="skill-bar-item"><div class="skill-bar-top"><span>VS Code</span><span>95%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div></div>
+        <div class="skill-bar-item"><div class="skill-bar-top"><span>Canva</span><span>90%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION SECTION ============ -->
+<section class="section" id="education">
+  <div class="section-container">
+    <p class="section-eyebrow center" data-reveal>Academic Path</p>
+    <h2 class="section-title center" data-reveal>My <span class="text-gradient">Education</span></h2>
+    <p class="section-sub center" data-reveal>Building a strong technical foundation, one semester at a time.</p>
+
+    <div class="timeline">
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">2025 — Present</span>
+          <h3>Bachelor of Computer Applications (BCA)</h3>
+          <p class="timeline-org"><i class="fa-solid fa-building-columns"></i> Sri Ram College Of Arts and Science, Thiruvallur</p>
+          <p>Studying core computer science subjects including programming, data structures,
+            databases, networking and web technologies — while independently building projects
+            in front-end development, UI/UX design and cybersecurity fundamentals.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">Ongoing</span>
+          <h3>Self-Directed Learning</h3>
+          <p class="timeline-org"><i class="fa-solid fa-laptop-code"></i> Online Courses &amp; Practice Projects</p>
+          <p>Continuously studying UI/UX principles, front-end best practices, Linux, networking
+            and ethical hacking basics through hands-on, project-based learning.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">Earlier</span>
+          <h3>Higher Secondary Education</h3>
+          <p class="timeline-org"><i class="fa-solid fa-school"></i> Chennai, Tamil Nadu</p>
+          <p>Built the foundation in logic, mathematics and computing that shaped my interest in
+            technology and design.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES SECTION ============ -->
+<section class="section section-alt" id="services">
+  <div class="section-container">
+    <p class="section-eyebrow center" data-reveal>How I Can Help</p>
+    <h2 class="section-title center" data-reveal>Services I <span class="text-gradient">Offer</span></h2>
+    <p class="section-sub center" data-reveal>Practical, detail-oriented support for your website or product.</p>
+
+    <div class="services-grid">
+      <div class="service-card" data-reveal>
+        <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+        <h3>Front-End Development</h3>
+        <p>Clean, semantic and efficient code that brings designs to life with smooth interactions.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+        <h3>Responsive Website Design</h3>
+        <p>Websites that look and perform beautifully across mobile, tablet and desktop.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+        <h3>UI/UX Design</h3>
+        <p>User-centered interfaces designed with wireframes, prototypes and thoughtful flows.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-icon"><i class="fa-solid fa-bullseye"></i></div>
+        <h3>Landing Page Design</h3>
+        <p>Focused, high-clarity landing pages built to communicate and convert.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+        <h3>Website Redesign</h3>
+        <p>Refreshing outdated websites with modern design language and better usability.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-icon"><i class="fa-solid fa-wrench"></i></div>
+        <h3>Website Maintenance</h3>
+        <p>Ongoing updates, fixes and small improvements to keep your site running smoothly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE SECTION ============ -->
+<section class="section" id="experience">
+  <div class="section-container experience-grid">
+    <div data-reveal>
+      <p class="section-eyebrow">Growth &amp; Practice</p>
+      <h2 class="section-title">Learning by <span class="text-gradient">Doing</span></h2>
+      <p class="about-text">
+        I'm early in my journey, and I approach that with intention: continuously improving my
+        skills through self-learning, online courses, practice projects, and exploring new
+        technologies. Rather than waiting for a formal role to start growing, I build things —
+        interfaces, small tools, security labs — and learn from every one of them.
+      </p>
+      <p class="about-text">
+        This habit of learning by doing has become the core of how I work: research a concept,
+        apply it in a real project, then refine it until it meets a standard I'm proud of.
+      </p>
+    </div>
+
+    <div class="exp-cards">
+      <div class="exp-card" data-reveal>
+        <i class="fa-solid fa-book-open"></i>
+        <h4>Online Courses</h4>
+        <p>Structured learning across front-end development, design and security fundamentals.</p>
+      </div>
+      <div class="exp-card" data-reveal>
+        <i class="fa-solid fa-diagram-project"></i>
+        <h4>Practice Projects</h4>
+        <p>Applying new concepts hands-on to build real, working interfaces and tools.</p>
+      </div>
+      <div class="exp-card" data-reveal>
+        <i class="fa-solid fa-compass"></i>
+        <h4>Exploring New Tech</h4>
+        <p>Staying curious about emerging tools and approaches in design and development.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT SECTION ============ -->
+<section class="section section-alt" id="contact">
+  <div class="section-container">
+    <p class="section-eyebrow center" data-reveal>Get In Touch</p>
+    <h2 class="section-title center" data-reveal>Let's Build Something <span class="text-gradient">Together</span></h2>
+    <p class="section-sub center" data-reveal>Have an opportunity, a project, or just want to say hello? I'd love to hear from you.</p>
+
+    <div class="contact-grid">
+      <div class="contact-info" data-reveal>
+        <a href="mailto:emankuthubedu@gmail.com" class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div><span>Email</span><p>emankuthubedu@gmail.com</p></div>
+        </a>
+        <a href="https://wa.me/918072426181" target="_blank" rel="noopener" class="contact-item">
+          <i class="fa-brands fa-whatsapp"></i>
+          <div><span>Phone / WhatsApp</span><p>+91 80724 26181</p></div>
+        </a>
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div><span>Location</span><p>Chennai, Tamil Nadu, India</p></div>
+        </div>
+
+        <div class="contact-socials">
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://instagram.com/0xemank" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" data-reveal novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" id="fname" name="name" required placeholder=" " autocomplete="name">
+            <label for="fname">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="femail" name="email" required placeholder=" " autocomplete="email">
+            <label for="femail">Your Email</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" id="fsubject" name="subject" required placeholder=" ">
+          <label for="fsubject">Subject</label>
+        </div>
+        <div class="form-group">
+          <textarea id="fmessage" name="message" rows="5" required placeholder=" "></textarea>
+          <label for="fmessage">Your Message</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">
+          <span>Send Message</span><i class="fa-solid fa-paper-plane"></i>
+        </button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <a href="#home" class="nav-logo">
+        <span class="logo-mark">EK</span>
+        <span class="logo-text">EMAN<span>KUTHUB</span></span>
+      </a>
+      <p>Front-End Developer &amp; UI/UX Designer building clean, modern digital experiences from Chennai, India.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://instagram.com/0xemank" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/918072426181" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Get In Touch</h4>
+      <a href="mailto:emankuthubedu@gmail.com"><i class="fa-solid fa-envelope"></i> emankuthubedu@gmail.com</a>
+      <a href="https://wa.me/918072426181" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> +91 80724 26181</a>
+      <span><i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu, India</span>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> EMAN KUTHUB. All rights reserved.</p>
+    <p>Designed &amp; Developed by EMAN KUTHUB</p>
+  </div>
+</footer>
+
+<!-- ============ BACK TO TOP ============ -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
